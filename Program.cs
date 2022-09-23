@@ -54,13 +54,12 @@ void HW3()
     int n2 = number / 1000 % 10;
     int n4 = number / 10 % 10;
     int n5 = number % 10;
-    string str = number.ToString();
-    vizov2(number, n1, n2, n4, n5, str);
+    vizov2(number, n1, n2, n4, n5);
 }
 
-void vizov2(int number, int n1, int n2, int n4, int n5, string str)
+void vizov2(int number, int n1, int n2, int n4, int n5)
 {
-    if(str.Length < 5 || str.Length > 5)
+    if(number > 99999 || number < 10000)
     {
         Console.WriteLine("Вы ввели не пятизначное число!");
     }
@@ -76,5 +75,5 @@ void vizov2(int number, int n1, int n2, int n4, int n5, string str)
 
 
 // HW1();
-HW2();
-// HW3();
+// HW2();
+HW3();
